@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>选项卡</title>
+    <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	font-size: 100%;
+    	font: inherit;
+    	vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    	display: block;
+    }
+    body {
+    	line-height: 1;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    blockquote, q {
+    	quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: '';
+    	content: none;
+    }
+    table {
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    }
+    .container{
+      width: 300px;
+      margin:100px auto;
+    }
+    h1{
+      text-align: center;
+      line-height: 36px;
+    }
+    .nav{
+      border: 1px solid #ccc;
+      overflow: hidden;
+    }
+    .nav a{
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      line-height: 28px;
+      width: 25%;
+      float: left;
+    }
+    .nav a.active{
+      background: #f00;
+      color: #fff;
+    }
+    .content{
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+    .item{
+      font-size: 14px;
+      line-height: 28px;
+      color: #333;
+      display: none;
+      padding: 5px;
+    }
+    .item.active{
+      display: block;
+    }
+    </style>
+    <script type="text/javascript" src="tab.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>选项卡</h1>
+      <div class="nav">
+        <a class="active" href="javascript:void(0);">1</a>
+        <a href="javascript:void(0);">2</a>
+        <a href="javascript:void(0);">3</a>
+        <a href="javascript:void(0);">4</a>
+      </div>
+      <div class="content">
+        <div class="item active">111111111111111111112016年3月4日 - 前文在GitHub 10分钟教程中讲述了,如何创建和使用Github。但我们该如何删除那些不打算要的项目呢?1.选择我们要删除的项目: 接下来我们就删除 kingroc7...</div>
+        <div class="item">222222222222222222222016年6月13日 - github / 删除git上项目 /1333 编辑 删除 引言 很多像我一样的新手在学习git的时候都会不小心的创建了多个没有用的工程, 那么git是否可以删除呢, 答...</div>
+        <div class="item">333333333333333333332016年4月18日 - 我在github上fork的项目,好像被原作者由于版权问题,给删除了,如何解决? Repository unavailable due to DMCA takedown.This repository is currently ...</div>
+        <div class="item">444444444444444444442017年3月18日 - 怎么删除github中的一个项目或仓库,在知晓如何在githu中建立项目,上传代码,修改代码之后,我们或许需要清理空间,删除不必存在的一些项目,那具体的应该...</div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    window.onload = function(){
+      tab();
+    }
+    </script>
+  </body>
+</html>
